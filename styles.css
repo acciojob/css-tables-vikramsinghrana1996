@@ -5,7 +5,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f8f9fa;
+    background-color: yellow;
 }
 
 table {
@@ -13,21 +13,17 @@ table {
     width: 50%;
 }
 
-th, td {
+td, th {
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 0.5rem;
-    text-align: left;
-}
-
-thead {
-    background-color: #ddd;
-}
-
-tbody tr:nth-child(odd) {
-    background-color: #f2f2f2;
+    text-align: left; /* Added missing semicolon */
 }
 
 tbody tr:nth-child(even) {
     background-color: #ffffff;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
 }
