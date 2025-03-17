@@ -1,46 +1,60 @@
 <!DOCTYPE html>
-
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Styled Table</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 0.5rem;
+            text-align: left;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(even) {
+            background-color: #ffffff;
+        }
+    </style>
 </head>
 <body>
 
     <table>
         <thead>
             <tr>
-                <th>Name</th>
-                <th>Age</th>
-                <th>City</th>
+                <th>Table-Header 1</th>
+                <th>Table-Header 2</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>John</td>
-                <td>25</td>
-                <td>New York</td>
+                <td>Row 1, Column 1</td>
+                <td>Row 1, Column 2</td>
             </tr>
             <tr>
-                <td>Emma</td>
-                <td>30</td>
-                <td>Los Angeles</td>
+                <td>Row 2, Column 1</td>
+                <td>Row 2, Column 2</td>
             </tr>
             <tr>
-                <td>Michael</td>
-                <td>28</td>
-                <td>Chicago</td>
+                <td>Row 3, Column 1</td>
+                <td>Row 3, Column 2</td>
             </tr>
             <tr>
-                <td>Sarah</td>
-                <td>35</td>
-                <td>Houston</td>
+                <td>Row 4, Column 1</td>
+                <td>Row 4, Column 2</td>
             </tr>
         </tbody>
     </table>
 
 </body>
 </html>
+
